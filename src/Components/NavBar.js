@@ -36,4 +36,10 @@ export default NavBar
 // NavBar.propTypes={
 //  title:PropTypes.string,
  
-// }  for good knowledge
+// } 
+// NavBar.defaultProps={
+ //  title:'this is a code',
+  
+ // } 
+
+// it's allow only specific dataztype  for good knowledge
