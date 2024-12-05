@@ -11,7 +11,8 @@ const TextForm = (props) => {
 setText(e.target.value)
   }
   return (
-    <div>
+    <>
+    <div className='container'>
     <h1>{props.heading}</h1>
 <div className="mb-3">
   {/* <label htmlFor="my-box" className="form-label">Example textarea</label> */}
@@ -19,6 +20,13 @@ setText(e.target.value)
 </div>
 <button className="btn btn-primary" onClick={HandleClick}>Convert to uppercase</button>
     </div>
+    <div className="cotainer my-3">
+  
+      <h1>your text summary </h1>
+       <p>{text.split(' ').filter((word) => word.length > 0).length} words and {text.length} characters</p>
+       <p>{ 0.008 * text.split(' ').length} Mintues read </p>
+    </div>
+    </>
   )
 }
 
