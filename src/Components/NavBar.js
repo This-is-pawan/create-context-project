@@ -35,6 +35,7 @@ const NavBar = (props) => {
 export default NavBar
 // NavBar.propTypes={
 //  title:PropTypes.string,
+//  title:PropTypes.string.isRequired,
  
 // } 
 // NavBar.defaultProps={
