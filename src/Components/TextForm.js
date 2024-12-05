@@ -25,6 +25,10 @@ setText(e.target.value)
       <h1>your text summary </h1>
        <p>{text.split(' ').filter((word) => word.length > 0).length} words and {text.length} characters</p>
        <p>{ 0.008 * text.split(' ').length} Mintues read </p>
+       <h2>preview</h2>
+       <p>
+    {text}
+       </p>
     </div>
     </>
   )
