@@ -10,6 +10,9 @@ const TextForm = (props) => {
   const uppercase=(e)=>{
 setText(e.target.value)
   }
+  const HandleClear=(e)=>{
+setText('')
+  }
   return (
     <>
     <div className='container'>
@@ -18,7 +21,8 @@ setText(e.target.value)
   {/* <label htmlFor="my-box" className="form-label">Example textarea</label> */}
   <textarea className="form-control" id="my-box" rows="8" value={text} onChange={uppercase} placeholder='put some value'></textarea>
 </div>
-<button className="btn btn-primary" onClick={HandleClick}>Convert to uppercase</button>
+<button className="btn btn-primary" onClick={HandleClick}>Convert to Uppercase</button>
+<button className="btn btn-primary mx-4" onClick={HandleClear}>Clear Text</button>
     </div>
     <div className="cotainer my-3">
   
