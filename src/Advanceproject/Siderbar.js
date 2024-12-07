@@ -90,7 +90,7 @@ const Siderbar = () => {
                   <article className="ui-element">
                     <i class="fa-brands fa-wpforms"></i>
                     <span>authentication</span>
-                    <i className="fas fa-angle-left"></i>
+                    <i className="fas fa-angle-down"></i>
                   </article>
                   <article className="ui-element">
                     <i class="fas fa-user"></i>
