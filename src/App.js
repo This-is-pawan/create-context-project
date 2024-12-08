@@ -1,23 +1,27 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import Home from "./Components/Home";
-import About from "./Components/About";
-import NavBar from "./Components/NavBar";
+import RoutNav from "./RouterProject/RoutNav";
+// import { Router, Route, Link } from "react-router-dom";
+ 
+
+
+// import NavBar from "./Components/NavBar";
 
 const App = () => {
   return (
     <div>
       <nav>
-        <NavBar/>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/About">About</Link></li>
-        </ul>
+   
+       <RoutNav/>
       </nav>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/About" element={<About/>} />
-      </Routes>
+      {/* <Router>
+        <Route path="/" />
+        <Home/>
+        </Route>
+        <Route path="/About"  />
+        <About/>
+      </Route>
+      </Router> */}
+      
     </div>
   );
 };
