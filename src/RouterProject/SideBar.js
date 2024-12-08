@@ -1,33 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import { Link, Route, Routes } from "react-router-dom";
 
-const SideBar = () => {
-  
-  const [isSidebarOpen, setSidebarOpen] = useState(true);
+const SideBar = (props) => {
+  const { isSidebarOpen1 } = props;
+
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    setSidebarOpen(isSidebarOpen1);
+  }, [isSidebarOpen1]);
 
   const toggleSidebar = () => {
-    setSidebarOpen(!isSidebarOpen); 
+    setSidebarOpen(!isSidebarOpen);
   };
 
   return (
     <>
-      <div className={`sideBar ${isSidebarOpen ? "sideBar-show" : " "}`}>
+      <div className={`sideBar ${isSidebarOpen ? "sideBar-show" : ""}`}>
         <FaTimes className="times" onClick={toggleSidebar} />
         <div className="lists">
           <ul>
             <li>
-              <Link to="/" onClick={toggleSidebar}>
+              <Link to="/">
                 <span className="link-dark">Home</span>
               </Link>
             </li>
             <li>
-              <Link to="/about" onClick={toggleSidebar}>
+              <Link to="/about">
                 <span className="link-dark">About</span>
               </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={toggleSidebar}>
+              <Link to="/contact">
                 <span className="link-dark">Contact</span>
               </Link>
             </li>

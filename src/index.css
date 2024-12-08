@@ -143,12 +143,14 @@ p {
   position: fixed;
   z-index: 1;
   top: 4.4rem;
-  /* transition: all 1s ease-in; */
-  scale: 1;
+  transition: all 0.3s ease-in;
+  /* scale: 1; */
+transform: translateX(-200px);
 }
 .sideBar-show{
  /* display: block; */
-scale: 0;
+/* scale: 0; */
+transform: translateX(0px);
 background-color: var(--bs-cyan);
   opacity: 0.8;
   width: 200px;
@@ -202,6 +204,13 @@ background-color: var(--bs-cyan);
     position: relative;
     top: 0.5rem;
     font-size: 1.2rem;
+  }
+  .sideBar {
+    display: none;
+   
+  }
+  .sideBar-show{
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
