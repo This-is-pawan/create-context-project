@@ -1,8 +1,8 @@
 import React from "react";
-import RoutNav from "./RouterProject/RoutNav";
-// import { Router, Route, Link } from "react-router-dom";
- 
 
+// import RoutNav from "./RouterProject/RoutNav";
+import FirstClass from "./RouterProject/ClassbaseComponent/FirstClass";
+// import { Router, Route, Link } from "react-router-dom";
 
 // import NavBar from "./Components/NavBar";
 
@@ -10,8 +10,8 @@ const App = () => {
   return (
     <div>
       <nav>
-   
-       <RoutNav/>
+        {/* <RoutNav/> */}
+        <FirstClass />
       </nav>
       {/* <Router>
         <Route path="/" />
@@ -21,7 +21,6 @@ const App = () => {
         <About/>
       </Route>
       </Router> */}
-      
     </div>
   );
 };

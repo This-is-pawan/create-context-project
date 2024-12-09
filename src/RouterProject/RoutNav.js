@@ -12,9 +12,9 @@ const RoutNav = () => {
   const toggleSidebar1 = () => {
     
     setSidebarOpen2(!isSidebarOpen1); 
-    if(isSidebarOpen1){
+    // if(isSidebarOpen1){
       
-    }
+    // }
 
   };
 
