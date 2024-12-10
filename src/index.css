@@ -59,7 +59,11 @@ transition: all 2s ease;
 .bar:hover{
   color: blue;
 }
+.Table{
+  margin: 1rem;
+  background: rgb(2, 2, 33);
 
+}
 
 @media screen and (max-width:600px) {
   .list{

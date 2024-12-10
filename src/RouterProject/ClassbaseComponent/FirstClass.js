@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { SecondClass } from './SecondClass';
 
 export default class FirstClass extends Component {
   constructor() {
@@ -56,8 +57,9 @@ export default class FirstClass extends Component {
               <a href="/">Contact</a>
             </li>
           </ul>
-        </div>
 
+        </div>
+<SecondClass/>
         
       </>
     );
