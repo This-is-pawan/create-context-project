@@ -1,10 +1,11 @@
 import React from 'react'
+import ThirdClass from './ThirdClass'
 
 export const SecondClass = () => {
   return (
    <>
   
-    <div className='Table'>
+    {/* <div className='Table'>
      <table className="table text-white">
   <thead>
     <tr>
@@ -34,7 +35,8 @@ export const SecondClass = () => {
     </tr>
   </tbody>
 </table>
-    </div>
+    </div> */}
+    {/* <ThirdClass/> */}
     </>
   )
 }
