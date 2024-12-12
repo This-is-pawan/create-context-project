@@ -65,8 +65,9 @@ export default class ThirdClass extends Component {
             <div className="loading-circle"></div>
           ) : (
             <div className="box">
-              {article.map((item, index) => (
-                <div className="boxAlign" key={index}>
+              {article.map((item) => (
+                <div className="boxAlign" key={item.id}>
+        <span>{item.publishedAt}</span>
                   <h4>{item.title}</h4>
                   {item.urlToImage && (
                     <img
