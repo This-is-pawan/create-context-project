@@ -25,7 +25,7 @@ export default class ThirdClass extends Component {
     axios
       .get(url)
       .then((response) => {
-        console.log("Response data:", response.data);
+        // console.log("Response data:", response.data);
         this.setState({
           article: response.data.articles , 
           loading: false,
@@ -43,7 +43,7 @@ export default class ThirdClass extends Component {
     return (
       <div>
         {loading ? (
-          <p>Loading...</p>
+           <div class="loading-circle"></div>
         ) : (
           <div className="box">
             {

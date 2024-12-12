@@ -135,3 +135,24 @@ transition: all 2s ease;
     gap: 1.5rem;
   }
 }
+.loading-circle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70px;
+  height: 70px;
+  border: 6px solid rgba(0, 0, 255, 0.2); 
+  border-top: 6px solid blue; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}

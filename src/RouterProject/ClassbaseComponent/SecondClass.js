@@ -1,5 +1,5 @@
 import React from 'react'
-import ThirdClass from './ThirdClass'
+// import ThirdClass from './ThirdClass'
 
 export const SecondClass = () => {
   return (
