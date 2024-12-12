@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-import img from "../About.svg"; // Assuming this is used somewhere else or can be removed if unused.
+// import img from "../About.svg";
 
 export default class ThirdClass extends Component {
   constructor() {
@@ -27,7 +27,7 @@ export default class ThirdClass extends Component {
       .then((response) => {
         console.log("Response data:", response.data);
         this.setState({
-          article: response.data.articles || [], // Fixed: articles instead of article
+          article: response.data.articles , 
           loading: false,
         });
       })
@@ -46,7 +46,7 @@ export default class ThirdClass extends Component {
           <p>Loading...</p>
         ) : (
           <div className="box">
-            {article.length > 0 ? (
+            {
               article.map((item, index) => (
                 <div className="boxAlign" key={index}>
                   <h4>{item.title}</h4>
@@ -56,9 +56,8 @@ export default class ThirdClass extends Component {
                   <p>{item.description}</p>
                 </div>
               ))
-            ) : (
-              <p>No articles available.</p>
-            )}
+            
+            }
           </div>
         )}
       </div>
