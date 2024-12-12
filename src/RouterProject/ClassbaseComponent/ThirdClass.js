@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { TiLeaf } from "react-icons/ti";
 
 export default class ThirdClass extends Component {
   constructor() {
@@ -31,6 +32,8 @@ export default class ThirdClass extends Component {
           article: response.data.articles,
           loading: false,
         });
+        
+        console.log(response.data.articles);
       })
       .catch((error) => {
         console.error("Error fetching news data:", error);
@@ -73,6 +76,8 @@ export default class ThirdClass extends Component {
                     />
                   )}
                   <p>{item.description}</p>
+                  <br/>
+                  <button className="btn" > <a href={item.url}>Read More</a></button>
                 </div>
               ))}
             </div>
