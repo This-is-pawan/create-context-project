@@ -67,12 +67,14 @@ export default class ThirdClass extends Component {
             <div className="box">
               {article.map((item) => (
                 <div className="boxAlign" key={item.id}>
-        <span>{item.publishedAt}</span>
+        <span>{new Date(item.publishedAt).toGMTString()
+        }</span>
                   <h4>{item.title}</h4>
                   {item.urlToImage && (
                     <img
                       src={item.urlToImage}
                       alt={item.title}
+                      title={item.title}
                       className="img"
                     />
                   )}
